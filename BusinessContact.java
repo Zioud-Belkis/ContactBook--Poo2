@@ -32,7 +32,12 @@ public class BusinessContact extends Contact {
 
 
 		public void displayDetails() {
-	        System.out.println("*****Business Contact: \n" +"Name:" + name + "\nPhone number:" + phoneNumber +"\nEmail: "+ email + "\nCompany: " + companyName + "\nJob Title: " + jobTitle);
+			System.out.println("Name: " + this.name);
+			System.out.println("Phone Number: " + this.phoneNumber);
+			System.out.println("Email: " + this.email);
+			System.out.println("Company Name: " + this.companyName);
+			System.err.println("Job Title: " + this.jobTitle);
+			System.err.println("");
 	    }
 
 	    public Contact copy() {

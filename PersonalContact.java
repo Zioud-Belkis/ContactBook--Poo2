@@ -9,18 +9,12 @@ public class PersonalContact extends Contact {
 	        this.relationship = relationship;
 	    }
 
-	    public String getRelationship() {
-			return relationship;
-		}
-
-
-		public void setRelationship(String relationship) {
-			this.relationship = relationship;
-		}
-
-
 		public void displayDetails() {
-	        System.out.println("*****Personal Contact: \n" +"Name:" + name + "\nPhone number:" + phoneNumber +"\nEmail: "+ email +  "\nRelationship: " + relationship);
+			System.out.println("Category: Business Contact");
+			System.out.println("Name: " + this.name);
+			System.out.println("Phone Number: " + this.phoneNumber);
+			System.err.println("Relationship: " + this.relationship);
+			System.err.println("");
 	    }
 
 	    public Contact copy() {
