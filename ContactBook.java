@@ -52,7 +52,6 @@ public class ContactBook implements Manageable {
           }
 
 		public static boolean isEmpty() {
-			// TODO Auto-generated method stub
 			return false;
 		}
 	    }

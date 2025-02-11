@@ -2,8 +2,8 @@ package poo2;
 
 public interface Manageable {
 
-	    void add(Contact contact);
-	    Contact search(String name);
-	    boolean remove(String name);
-	    boolean shareContact(String name, ContactBook targetContactBook);
+	    public void add(Contact contact);
+	    public Contact search(String name);
+	    public boolean remove(String name);
+	    public boolean shareContact(String name, ContactBook targetContactBook);
 	}

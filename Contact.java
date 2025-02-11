@@ -11,14 +11,8 @@ public abstract class Contact {
 	        this.phoneNumber = phoneNumber;
 	        this.email = email;
 	    }
-		
-		public void displayDetails() {
-           System.out.println(this.toString());
-	    }
-	    
-	    public String toString() {
-	    	   return "Name :" + name + "\n Number phone :" + phoneNumber + "\nEmail :" + email;
-	       }
+
+		public abstract void displayDetails()
 
 	    public abstract Contact copy();
        }

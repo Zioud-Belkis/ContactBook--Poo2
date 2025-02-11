@@ -15,6 +15,7 @@ public class PersonalContact extends Contact {
 			System.out.println("Phone Number: " + this.phoneNumber);
 			System.err.println("Relationship: " + this.relationship);
 			System.err.println("");
+			System.err.println("");
 	    }
 
 	    public Contact copy() {
