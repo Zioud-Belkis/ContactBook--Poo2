@@ -110,7 +110,7 @@ public class Mainn {
               if(found != null) {
             	  found.displayDetails();
               }else {
-            	  System.out.println("The contact that you search on exist");
+            	  System.out.println("The contact that you search on doesn't exist");
               }
              }
 	    	 break;
