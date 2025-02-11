@@ -13,12 +13,14 @@ public class Mainn {
         
         int run=1;
 		while(run==1) {
-		 System.out.println("\nchoose :):):)");
-		 System.out.println("1.Add");
-		 System.out.println("2.Remove");
-		 System.out.println("3.Search");
-		 System.out.println("4.Display");
-		 System.out.println("5.Exit");
+		System.err.println("");
+		 System.out.println("***************** MENU *****************");
+		 System.err.println("Please choose one of the available operations");
+		 System.out.println("1.Add Contact");
+		 System.out.println("2.Remove Contact");
+		 System.out.println("3.Search a contact");
+		 System.out.println("4.Display all the contact in the contact book");
+		 System.out.println("5.Exit the program");
 		 
 	     int x=ch.nextInt();
 	     
@@ -34,20 +36,20 @@ public class Mainn {
 	    	  ch.nextLine();
 	    	  
 	    	  if(y==1) {
-	   		  System.out.println("enter your name"); 
-	          name = ch.nextLine();
-	          System.out.println("enter your number phone"); 
-	          phoneNumber = ch.nextLine();
-	          System.out.println("enter your email"); 
-	          email = ch.nextLine();
-	          System.out.println("enter your Company name");
-	          String CompanyName = ch.nextLine();
-	          System.out.println("enter your job title"); 
-	          String JobTitle = ch.nextLine();
-	          
-	    contactBook.add(new BusinessContact(name, phoneNumber, email, CompanyName, JobTitle));
-		     
-	    	 }else {
+				System.out.println("enter your name"); 
+				name = ch.nextLine();
+				System.out.println("enter your number phone"); 
+				phoneNumber = ch.nextLine();
+				System.out.println("enter your email"); 
+				email = ch.nextLine();
+				System.out.println("enter your Company name");
+				String CompanyName = ch.nextLine();
+				System.out.println("enter your job title"); 
+				String JobTitle = ch.nextLine();
+				
+				contactBook.add(new BusinessContact(name, phoneNumber, email, CompanyName, JobTitle));
+				
+	    	 }else if(y == 2){
 	   		  System.out.println("enter your name"); 
 	          name = ch.nextLine();
 	          System.out.println("enter your number phone"); 
@@ -57,8 +59,10 @@ public class Mainn {
 	          System.out.println("enter your relationship"); 
 	          String Relationship = ch.nextLine();
 	          
-	    contactBook.add(new PersonalContact(name,phoneNumber,email,Relationship));
-	    	 }
+				contactBook.add(new PersonalContact(name,phoneNumber,email,Relationship));
+	    	 }else{
+				System.out.println("The option that you choosed isn't available");
+			 }
 	    	break;
 	   
 	     case 2:
