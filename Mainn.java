@@ -79,7 +79,7 @@ public class Mainn {
 	    	break;
 	   
 	     case 2:
-              if(ContactBook.isEmpty()) {
+              if(contactBook.isEmpty()) {
             	  System.out.println("The contact book is empty");
               }else {
 				System.err.println("");
@@ -98,7 +98,7 @@ public class Mainn {
 	    	 break;
 	    	 
 	     case 3:
-	         if(ContactBook.isEmpty()) {
+	         if(contactBook.isEmpty()) {
            	  System.out.println("Empty");
 				 System.err.println("");
              }else {
@@ -116,11 +116,10 @@ public class Mainn {
 	    	 break;
 	    	 
 	     case 4:
-	    	 if(ContactBook.isEmpty()) {
+	    	 if(contactBook.isEmpty()) {
 	           	  System.out.println("The contact book is empty");
 					 System.err.println("");
 	             }else {
-					System.err.println("Contacts list: ");
 	            	 contactBook.displayAllContacts();
 	             }
 	    	 break;

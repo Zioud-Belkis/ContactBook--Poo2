@@ -12,7 +12,7 @@ public abstract class Contact {
 	        this.email = email;
 	    }
 
-		public abstract void displayDetails()
+		public abstract void displayDetails();
 
 	    public abstract Contact copy();
        }

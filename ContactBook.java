@@ -51,8 +51,8 @@ public class ContactBook implements Manageable {
 	        }
           }
 
-		public static boolean isEmpty() {
-			return false;
+		public boolean isEmpty() {
+			return contacts.isEmpty();
 		}
 	    }
 	
