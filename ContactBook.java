@@ -45,9 +45,12 @@ public class ContactBook implements Manageable {
 	    }
 
 	    public void displayAllContacts() {
-	        System.out.println("Contact Book:");
-	        for (Contact contact : contacts) {
-	            contact.displayDetails();
+		    int nb=1;
+	          System.out.println("Contact Book:");
+	     for (Contact contact : contacts) {
+	          System.out.println(nb + "-");
+	              contact.displayDetails();
+			    nb++;
 	        }
           }
 
